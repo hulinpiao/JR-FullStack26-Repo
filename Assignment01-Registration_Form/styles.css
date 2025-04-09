@@ -57,6 +57,12 @@ label {
     color: #4a5568;
 }
 
+.required-label::after {
+    content: " *";
+    color: red;
+    margin-left: 2px;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],

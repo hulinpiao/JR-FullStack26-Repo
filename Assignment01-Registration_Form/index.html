@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,27 +14,27 @@
             <div class="section-title">Your basic info</div>
             
             <div class="form-group">
-                <label for="firstName">First Name:</label>
+                <label for="firstName" class="required-label">First Name:</label>
                 <input type="text" id="firstName" name="firstName" required>
             </div>
 
             <div class="form-group">
-                <label for="lastName">Last Name:</label>
+                <label for="lastName" class="required-label">Last Name:</label>
                 <input type="text" id="lastName" name="lastName" required>
             </div>
 
             <div class="form-group">
-                <label for="email">Email:</label>
+                <label for="email" class="required-label">Email:</label>
                 <input type="email" id="email" name="email" required>
             </div>
 
             <div class="form-group">
-                <label for="password">Password:</label>
+                <label for="password" class="required-label">Password:</label>
                 <input type="password" id="password" name="password" required minlength="8">
             </div>
 
             <div class="form-group">
-                <label for="confirmPassword">Confirm Password:</label>
+                <label for="confirmPassword" class="required-label">Confirm Password:</label>
                 <input type="password" id="confirmPassword" name="confirmPassword" required>
             </div>
 
@@ -82,7 +82,7 @@
 
             <div class="checkbox-group">
                 <input type="checkbox" id="terms" name="terms" required>
-                <label for="terms">I'm accepting Terms and Conditions</label>
+                <label for="terms" class="required-label">I'm accepting Terms and Conditions</label>
             </div>
 
             <button type="submit">Sign Up</button>
