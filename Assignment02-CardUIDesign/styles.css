@@ -1,0 +1,151 @@
+/* ===== Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* ===== Layout ===== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* ===== Card Base ===== */
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+    transition: all 0.3s ease;
+}
+
+/* ===== Card Components ===== */
+/* Card Image */
+.card-image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card Content */
+.card-content {
+    padding: 20px;
+}
+
+.classname {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.date {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ===== Card Variants ===== */
+/* Background Colors */
+.bg-blue {
+    background-color: #3498db;
+}
+
+.bg-green {
+    background-color: #2ecc71;
+}
+
+.bg-purple {
+    background-color: #9b59b6;
+}
+
+.bg-gradient {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+}
+
+/* Card Effects */
+/* Glow Effect */
+.glow-card {
+    border: 2px solid transparent;
+}
+
+.glow-card:hover {
+    border-color: #3498db;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+}
+
+/* Tilt Effect */
+.tilt-card {
+    transform-style: preserve-3d;
+}
+
+.tilt-card:hover {
+    transform: perspective(1000px) rotateX(10deg) rotateY(10deg);
+}
+
+/* Shake Effect */
+.shake-card:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-20px); }
+    75% { transform: translateX(20px); }
+}
+
+/* ===== Responsive Design ===== */
+/*-- laptop screen --*/
+@media (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+/*-- ipad screen --*/
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .card-image h2 {
+        font-size: 1.3em;
+    }
+}
+
+/*-- mobile screen --*/
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .card-content {
+        padding: 15px;
+    }
+}
