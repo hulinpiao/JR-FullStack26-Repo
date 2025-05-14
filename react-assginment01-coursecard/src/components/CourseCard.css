@@ -1,0 +1,39 @@
+.course-card {
+  width: 280px;
+  flex: 0 0 auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 0 10px;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4500;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.course-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.course-info {
+  color: #555;
+  margin: 5px 0;
+}
